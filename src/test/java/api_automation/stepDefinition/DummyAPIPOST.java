@@ -37,7 +37,7 @@ public class DummyAPIPOST extends TestBase{
 		scenario.write(requstbody);
 		scenario.embed(requstbody.getBytes(), "application/json");
 	}
-	@When("^User sumbits request and gets response$")
+	@When("User submits request and gets response")
 	public void user_sumbits_request_and_gets_response() throws Throwable {
 		RestAssured.baseURI=property.getProperty("postDummyURI");		
 //		RestAssured.baseURI="http://dummy.restapiexample.com/api/v1/create";

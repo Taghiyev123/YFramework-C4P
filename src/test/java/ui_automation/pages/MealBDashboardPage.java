@@ -17,4 +17,7 @@ public class MealBDashboardPage {
     @FindBy(id = "HeaderCurrentUserName")
     public WebElement currentUserFullName;
 
+
+    // vasif mustafa
+
 }

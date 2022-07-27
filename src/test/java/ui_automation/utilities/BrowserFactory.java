@@ -28,7 +28,7 @@ public class BrowserFactory {
                     }
                     else {
                         switch (System.getProperty("browser")) {
-                            case "chrome-headless":
+                            case "chrome-headless": //<-- you run your test cases in headless mode(in hidden mode), it's basically running it without showing the browser
                                 WebDriverManager.chromedriver().setup();
                                 driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                                 break;

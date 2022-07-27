@@ -5,7 +5,7 @@ Feature: Expense
     Given I login with username as "elnar" and password as "mart12345"
     And I am on the "Expenses" page
 
-  @MB-004 @Parallel
+  @MB-004 @Parallel @run
   Scenario: View Column options in Dropdown
     Then I see below options when clicked on column dropdown
       |option|
@@ -16,7 +16,7 @@ Feature: Expense
       |Business purpose|
       |Project name|
 
-  @MB-006
+  @MB-006 @run
   Scenario: Adding Expense
     And I am on the "Expenses" page
     And I can add expense
@@ -28,7 +28,7 @@ Feature: Expense
     Then I click on save button
     And I should be able to verify created expense on expense page
 
-  @MB-007
+  @MB-007 @run
   Scenario: User should be able to compare data from UI to DB
     Then I navigate to the expense modal window
     Then I complete all fields of expense modal window

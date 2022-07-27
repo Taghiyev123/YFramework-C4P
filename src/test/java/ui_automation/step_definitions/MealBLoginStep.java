@@ -1,5 +1,4 @@
 package ui_automation.step_definitions;
-
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import ui_automation.pages.MealBDashboardPage;
@@ -17,6 +16,7 @@ public class MealBLoginStep {
     @Given("I'm on the MealB landing page")
     public void i_m_on_the_MealB_landing_page() {
         Driver.getInstance().getDriver().get(ConfigurationReader.getProperty("ui-config.properties", "mealb.url"));
+
     }
 
     @When("I click on the Sign In button")
